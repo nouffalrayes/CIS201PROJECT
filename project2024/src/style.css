@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4; /* Light background */
+    color: #333; /* Dark text color */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    height: 100vh; 
+}
+
+/* Top Navigation Bar */
+.top-nav {
+    background-color: #ddd; /* Light grey background for nav */
+    color: #333; /* Dark text color */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Navigation Items */
+.nav-item a {
+    color: #333; /* Dark text color */
+    font-size: 24px; /* Bigger icons */
+    text-decoration: none;
+}
+
+.nav-item a:hover {
+    color: #fff; /* Light text on hover */
+    background-color: #888; /* Darker grey background on hover */
+    padding: 8px;
+    border-radius: 5px;
+}
+
+
+.menu {
+    display: none; 
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #ddd; /* Light grey background for menu */
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.menu a {
+    display: block;
+    color: #333; /* Dark text color */
+    text-decoration: none;
+    padding: 10px;
+}
+
+.menu a:hover {
+    background-color: #888; /* Darker grey background on hover */
+}
+
+/* Main Content */
+.main-content {
+    margin-top: 20px;
+    padding: 20px;
+    flex: 1; /* Allow this to grow and take available space */
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: calc(100vh - 80px); /* Adjust according to the height of the top nav */
+}
+
+/* Container for countdown */
+.container {
+    text-align: center; /* Center text inside the container */
+}
+
+/* Countdown Display */
+.countdown {
+    margin-top: 20px;
+    font-size: 24px; /* Increase font size for better visibility */
+    color: #333; /* Dark text color */
+}
+
